@@ -1,11 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-const PrimeraApp = () => {
+const PrimeraApp = ( {saludo = 'Hola Mundo'} ) => {
+
     return (
-        <Fragment>
-            <h1>Hola Mundo</h1>
+        <>
+            <h1>{saludo}</h1>
             <p>Mi primera aplicación</p>
-        </Fragment>
+        </>
     );
 }
 
