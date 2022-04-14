@@ -2,10 +2,17 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 const CounterApp = ({ value }) => {
+
+    // handleAdd
+    const handleAdd = (e) => {
+        console.log(e);
+    };
+
     return (
         <>
-        <h1>Counter App</h1>
-        <h2>{value}</h2>
+            <h1>Counter App</h1>
+            <h2>{value}</h2>
+            <button onClick={handleAdd}>+1</button>
         </>
     );
 };
@@ -15,7 +22,7 @@ CounterApp.propTypes = {
 }
 
 CounterApp.defaultProps = {
-    value: 123
+    value: 10
 }
 
 export default CounterApp;
